@@ -1,5 +1,5 @@
 const mongoose = require('mongoose'); //requiring mongoose
-mongoose.connect('mongodb://localhost/hospital_api'); //connecting to mongodb
+mongoose.connect('mongodb://hos-node-deploy.herokuapp.com'); //connecting to mongodb
 const db = mongoose.connection; //acquiring the connection
 
 db.on('error', console.error.bind(console, 'Error in connecting to MongoDB!')); //if error occured
